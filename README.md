@@ -1,4 +1,4 @@
-# Cursos Alura - Exercícios, exemplos, desafios, etc
+# Alura - Exercises, examples, challenges, etc
 
 ## Java Spring Framework
 - [Java: Trabalhando com lambdas, streams e spring framework](https://github.com/WhiteArct1c/cursos-alura/tree/main/Java%20Spring%20Framework/curso-alura-screenmatch)
