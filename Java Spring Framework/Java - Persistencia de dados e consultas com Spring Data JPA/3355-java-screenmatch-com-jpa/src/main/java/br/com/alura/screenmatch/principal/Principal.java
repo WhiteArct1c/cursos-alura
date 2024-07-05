@@ -3,11 +3,14 @@ package br.com.alura.screenmatch.principal;
 import br.com.alura.screenmatch.model.DadosSerie;
 import br.com.alura.screenmatch.model.DadosTemporada;
 import br.com.alura.screenmatch.model.Serie;
+import br.com.alura.screenmatch.repository.SerieRepository;
 import br.com.alura.screenmatch.service.ConsumoApi;
 import br.com.alura.screenmatch.service.ConverteDados;
+import org.springframework.stereotype.Component;
 
 import java.util.*;
 
+@Component
 public class Principal {
 
     private final Scanner leitura = new Scanner(System.in);
@@ -17,6 +20,12 @@ public class Principal {
     private final String API_KEY = "&apikey=6585022c";
     private final List<DadosSerie> dadosSeries = new ArrayList<>();
 
+    private final SerieRepository serieRepository;
+
+    public Principal(SerieRepository serieRepository) {
+        this.serieRepository = serieRepository;
+    }
+
     public void exibeMenu() {
         var opcao = -1;
         while (opcao != 0) {
@@ -24,7 +33,7 @@ public class Principal {
                     1 - Buscar séries
                     2 - Buscar episódios
                     3 - Listar séries buscadas
-                    0 - Sair                                \s
+                    0 - Sair \s
                     """;
 
             System.out.println(menu);
@@ -60,6 +69,8 @@ public class Principal {
 
     private void buscarSerieWeb() {
         DadosSerie dados = getDadosSerie();
+        Serie serie = new Serie(dados);
+        serieRepository.save(serie);
         dadosSeries.add(dados);
         System.out.println(dados);
     }
