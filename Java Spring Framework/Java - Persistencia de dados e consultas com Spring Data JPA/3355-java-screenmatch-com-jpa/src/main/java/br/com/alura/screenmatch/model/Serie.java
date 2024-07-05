@@ -18,7 +18,7 @@ public class Serie {
     private String titulo;
     private Integer totalTemporadas;
     private Double avaliacao;
-    @ElementCollection(targetClass = Categoria.class)
+    @ElementCollection(targetClass = Categoria.class, fetch = FetchType.EAGER)
     @Enumerated(EnumType.STRING)
     private List<Categoria> generos;
     private String atores;

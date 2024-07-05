@@ -59,12 +59,11 @@ public class Principal {
         }
     }
 
-    private void listarSeriesBuscadas() {
-        List<Serie> series = dadosSeries.stream()
-                .map(Serie::new)
+    public void listarSeriesBuscadas() {
+        List<Serie> series = serieRepository.findAll();
+        series.stream()
                 .sorted(Comparator.comparing(Serie::getAvaliacao).reversed())
-                .toList();
-        series.forEach(System.out::println);
+                .forEach(System.out::println);
     }
 
     private void buscarSerieWeb() {
