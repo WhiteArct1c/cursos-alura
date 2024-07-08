@@ -3,7 +3,7 @@
 ## Backend
 ### Java e Spring Framework
 - [Java: Trabalhando com lambdas, streams e spring framework](https://github.com/WhiteArct1c/cursos-alura/tree/main/Java%20Spring%20Framework/curso-alura-screenmatch)
-- [Java: Persistência de dados e consultas com Spring Data JPA](https://github.com/WhiteArct1c/cursos-alura/tree/main/Java%20Spring%20Framework/Java%20-%20Persistencia%20de%20dados%20e%20consultas%20com%20Spring%20Data%20JPA/3355-java-screenmatch-com-jpa)
+- [Java: Persistência de dados e consultas com Spring Data JPA](https://github.com/WhiteArct1c/cursos-alura/tree/main/Java%20Spring%20Framework/Java%20-%20Persistencia%20de%20dados%20e%20consultas%20com%20Spring%20Data%20JPA)
 
 ## Frontend
 ### ReactJs
