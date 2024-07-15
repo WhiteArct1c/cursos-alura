@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  db:
+    image: postgres
+    volumes:
+      - PGDATA:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASS}
+    ports:
+      - "5433:5432"
+    networks:
+      - screenmusic-docker-network
+
+  pgadmin4:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_EMAIL}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASS}
+    ports:
+      - "15432:80"
+    depends_on:
+      - db
+    networks:
+      - screenmusic-docker-network
+
+networks:
+  screenmusic-docker-network:
+    driver: bridge
+
+volumes:
+  PGDATA:
