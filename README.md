@@ -8,5 +8,6 @@
 
 ## Frontend
 ### ReactJs
+- [React: escrevendo com Typescript](https://github.com/WhiteArct1c/cursos-alura/tree/main/ReactJS/React%20-%20escrevendo%20com%20typescript/alura-studies)
 - [React: testes de integração e mocks](https://github.com/WhiteArct1c/cursos-alura/tree/main/ReactJS/React%20-%20testes%20de%20integra%C3%A7%C3%A3o%20e%20mocks/bytebank-v2)
 - [Testes automatizados com Jest e Testing Library](https://github.com/WhiteArct1c/cursos-alura/tree/main/ReactJS/Testes%20automatizados%20com%20Jest%20e%20Testing%20library/bytebank)
