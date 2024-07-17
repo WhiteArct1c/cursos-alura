@@ -11,3 +11,7 @@
 - [React: escrevendo com Typescript](https://github.com/WhiteArct1c/cursos-alura/tree/main/ReactJS/React%20-%20escrevendo%20com%20typescript/alura-studies)
 - [React: testes de integração e mocks](https://github.com/WhiteArct1c/cursos-alura/tree/main/ReactJS/React%20-%20testes%20de%20integra%C3%A7%C3%A3o%20e%20mocks/bytebank-v2)
 - [Testes automatizados com Jest e Testing Library](https://github.com/WhiteArct1c/cursos-alura/tree/main/ReactJS/Testes%20automatizados%20com%20Jest%20e%20Testing%20library/bytebank)
+
+## Banco de dados
+### MongoDB
+- [MongoDB - conhecendo um banco de dados NoSQL](https://github.com/WhiteArct1c/cursos-alura/tree/main/Banco%20de%20dados/MongoDB%20-%20conhecendo%20um%20banco%20de%20dados%20NoSQL)
