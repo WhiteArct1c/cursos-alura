@@ -6,6 +6,9 @@
 - [Java: Persistência de dados e consultas com Spring Data JPA](https://github.com/WhiteArct1c/cursos-alura/tree/main/Java%20Spring%20Framework/Java%20-%20Persistencia%20de%20dados%20e%20consultas%20com%20Spring%20Data%20JPA)
 - [Java: Criando sua primeira API em Spring Boot e conectando ao frontend](https://github.com/WhiteArct1c/cursos-alura/tree/main/Java%20Spring%20Framework/Java%20-%20Criando%20sua%20primeira%20API%20e%20conectando%20ao%20front/screenmatch-random-phrases)
 
+### NodeJS
+- [NodeJS: criando uma API REST com Express e MongoDB](https://github.com/WhiteArct1c/cursos-alura/tree/main/NodeJS/NodeJS%20-%20criando%20uma%20API%20REST%20com%20Express%20e%20MongoDB)
+
 ## Frontend
 ### ReactJs
 - [React: escrevendo com Typescript](https://github.com/WhiteArct1c/cursos-alura/tree/main/ReactJS/React%20-%20escrevendo%20com%20typescript/alura-studies)
