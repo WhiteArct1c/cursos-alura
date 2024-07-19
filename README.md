@@ -17,4 +17,4 @@
 
 ## Banco de dados
 ### MongoDB
-- [MongoDB - conhecendo um banco de dados NoSQL](https://github.com/WhiteArct1c/cursos-alura/tree/main/Banco%20de%20dados/MongoDB%20-%20conhecendo%20um%20banco%20de%20dados%20NoSQL)
+- [MongoDB: conhecendo um banco de dados NoSQL](https://github.com/WhiteArct1c/cursos-alura/tree/main/Banco%20de%20dados/MongoDB%20-%20conhecendo%20um%20banco%20de%20dados%20NoSQL)
