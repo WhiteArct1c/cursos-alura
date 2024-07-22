@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import style from "./Button.module.scss";
 
 interface ButtonProps {
@@ -7,14 +7,12 @@ interface ButtonProps {
   onClick?: () => void;
 }
 
-class Button extends React.Component<ButtonProps> {
-  render() {
+function Button({ children, type, onClick }: ButtonProps) {
     return (
-      <button className={style.botao} type={this.props.type} onClick={this.props.onClick}>
-        {this.props.children}
+      <button className={style.botao} type={type} onClick={onClick}>
+        {children}
       </button>
     );
-  }
 }
 
 export default Button;
