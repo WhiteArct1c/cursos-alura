@@ -1,3 +1,4 @@
+import Item from "./Item";
 import style from "./List.module.scss";
 
 function List() {
@@ -19,10 +20,10 @@ function List() {
             {
                tarefas.map((item, index) => {
                   return (
-                     <li key={index} className={style.item}>
-                        <h3>{item.nome}</h3>
-                        <span>{item.tempo}</span>
-                     </li>
+                     <Item
+                        key={index}
+                        {...item}
+                     />
                   );
                })
             }
