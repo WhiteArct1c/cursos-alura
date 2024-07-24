@@ -42,6 +42,18 @@ class LivroController {
       }
    }
 
+   static async getBooksByEditora(req, res) {
+      const editoraBody = req.query.editora;
+      try {
+         const booksByEditora = await livro.find({ editora: editoraBody });
+         res.status(200).json(booksByEditora);
+      } catch (error) {
+         res
+            .status(500)
+            .json({ message: `${error.message} - falha ao procurar o livro por editora`});
+      }
+   }
+
    static async updateBook(req, res){
       try {
          await livro.findByIdAndUpdate(req.params.id, req.body);
