@@ -16,7 +16,7 @@ class AuthorController {
    static async registerNewAuthor (req, res){
       try {
          const newAuthor = await author.create(req.body);
-         res.status(201).json({message: "Criado com sucesso!", livro: newAuthor});
+         res.status(201).json({message: "Criado com sucesso!", autor: newAuthor});
       } catch (error) {
          res
             .status(500)
@@ -24,7 +24,7 @@ class AuthorController {
       }
    }
 
-   static async getAuthorDetails(req, res){
+   static async getAuthorById(req, res){
       try {
          const author = await author.findById(req.params.id);
          res.status(200).json(author);
