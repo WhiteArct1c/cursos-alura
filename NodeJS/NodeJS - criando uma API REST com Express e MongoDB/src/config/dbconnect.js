@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 async function conectaNaDb(){
-   mongoose.connect("mongodb://localhost:27018/api_node_alura");
+   mongoose.connect(process.env.DB_CONNECTION_STRING);
    return mongoose.connection;
 }
 
