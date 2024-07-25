@@ -6,6 +6,13 @@ function errorHandler(err, req, res, next) {
     res.status(400).json({
       message: "Um ou mais dados informados estão mal formatados ou incorretos",
     });
+  } else if (err instanceof mongoose.Error.ValidationError) {
+    const errorsMessage = Object.values(err.errors)
+      .map((error) => error.message)
+      .join(", ");
+    res.status(400).json({
+      message: `Os seguintes erros foram encontrados: ${errorsMessage}`,
+    });
   } else {
     res.status(500).json({ message: "Erro interno do servidor" });
   }
