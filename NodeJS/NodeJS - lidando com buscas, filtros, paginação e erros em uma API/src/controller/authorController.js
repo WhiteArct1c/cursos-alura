@@ -31,8 +31,8 @@ class AuthorController {
       res.status(200).json(author);
     } catch (error) {
       res
-        .status(400)
-        .json({ message: `${error.message} - Id do autor não localizado` });
+        .status(404)
+        .json({ message: `${error.message} - Autor não localizado por Id` });
     }
   }
 
