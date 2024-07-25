@@ -1,6 +1,7 @@
 import express from "express";
 import conectaNaDb from "./config/dbconnect.js";
 import routes from "./routes/index.js";
+import errorHandler from "./middlewares/errorHandler.js";
 
 const conexao = await conectaNaDb();
 
@@ -14,5 +15,7 @@ conexao.once("open", () => {
 
 const app = express();
 routes(app);
+
+app.use(errorHandler);
 
 export default app;

@@ -2,18 +2,16 @@ import { author } from "../model/Author.js";
 import livro from "../model/Livro.js";
 
 class LivroController {
-  static async getBooks(req, res) {
+  static async getBooks(req, res, next) {
     try {
       const listaLivros = await livro.find({});
       res.status(200).json(listaLivros);
     } catch (error) {
-      res
-        .status(500)
-        .json({ message: `${error.message} - falha ao listar livros` });
+      next(error);
     }
   }
 
-  static async registerNewBook(req, res) {
+  static async registerNewBook(req, res, next) {
     const body = req.body;
 
     try {
@@ -25,54 +23,44 @@ class LivroController {
         .status(201)
         .json({ message: "Criado com sucesso!", livro: createdBook });
     } catch (error) {
-      res
-        .status(500)
-        .json({ message: `${error.message} - falha ao cadastrar livro` });
+      next(error);
     }
   }
 
-  static async getBookById(req, res) {
+  static async getBookById(req, res, next) {
     try {
       const book = await livro.findById(req.params.id);
       res.status(200).json(book);
     } catch (error) {
-      res
-        .status(500)
-        .json({ message: `${error.message} - falha ao procurar o livro` });
+      next(error);
     }
   }
 
-  static async getBooksByEditora(req, res) {
+  static async getBooksByEditora(req, res, next) {
     const editoraBody = req.query.editora;
     try {
       const booksByEditora = await livro.find({ editora: editoraBody });
       res.status(200).json(booksByEditora);
     } catch (error) {
-      res.status(500).json({
-        message: `${error.message} - falha ao procurar o livro por editora`,
-      });
+      next(error);
     }
   }
 
-  static async updateBook(req, res) {
+  static async updateBook(req, res, next) {
     try {
       await livro.findByIdAndUpdate(req.params.id, req.body);
       res.status(200).json({ message: "Livro atualizado!" });
     } catch (error) {
-      res
-        .status(500)
-        .json({ message: `${error.message} - falha ao atualizar o livro` });
+      next(error);
     }
   }
 
-  static async deleteBook(req, res) {
+  static async deleteBook(req, res, next) {
     try {
       await livro.findByIdAndDelete(req.params.id);
       res.status(200).json({ message: "Livro excluído com sucesso!" });
     } catch (error) {
-      res
-        .status(500)
-        .json({ message: `${error.message} - falha ao excluir o livro` });
+      next(error);
     }
   }
 }
