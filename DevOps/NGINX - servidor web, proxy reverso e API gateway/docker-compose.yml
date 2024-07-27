@@ -6,7 +6,12 @@ services:
     ports:
       - "80:80"
       - "8080:8080"
+      - "8001:8001"
+      - "8002:8002"
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
       - ./servers:/etc/nginx/conf.d
-      - ./html:/Users/whitearctic/dev/nginx
+      - ./html/index.html:/Users/whitearctic/dev/nginx/index.html
+      - ./html/error.html:/Users/whitearctic/dev/nginx/error.html
+      - ./html/servico1.html:/Users/whitearctic/dev/nginx/servico1/servico1.html
+      - ./html/servico2.html:/Users/whitearctic/dev/nginx/servico2/servico2.html
