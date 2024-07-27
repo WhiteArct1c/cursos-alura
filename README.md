@@ -19,3 +19,7 @@
 ## Banco de dados
 ### MongoDB
 - [MongoDB: conhecendo um banco de dados NoSQL](https://github.com/WhiteArct1c/cursos-alura/tree/main/Banco%20de%20dados/MongoDB%20-%20conhecendo%20um%20banco%20de%20dados%20NoSQL)
+
+## DevOps
+### NGINX
+- [NGINX: servidor web, proxy reverso, API gateway e Loadbalancer](https://github.com/WhiteArct1c/cursos-alura/tree/main/DevOps/NGINX%20-%20servidor%20web%2C%20proxy%20reverso%20e%20API%20gateway)
