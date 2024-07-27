@@ -8,6 +8,7 @@
 
 ### NodeJS
 - [NodeJS: criando uma API REST com Express e MongoDB](https://github.com/WhiteArct1c/cursos-alura/tree/main/NodeJS/NodeJS%20-%20criando%20uma%20API%20REST%20com%20Express%20e%20MongoDB)
+- [NodeJS: lidando com buscas, filtros, paginação e erros em uma API](https://github.com/WhiteArct1c/cursos-alura/tree/main/NodeJS/NodeJS%20-%20lidando%20com%20buscas%2C%20filtros%2C%20pagina%C3%A7%C3%A3o%20e%20erros%20em%20uma%20API)
 
 ## Frontend
 ### ReactJs
