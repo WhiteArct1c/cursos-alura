@@ -5,6 +5,7 @@
 - [Java: Trabalhando com lambdas, streams e spring framework](https://github.com/WhiteArct1c/cursos-alura/tree/main/Java%20Spring%20Framework/curso-alura-screenmatch)
 - [Java: Persistência de dados e consultas com Spring Data JPA](https://github.com/WhiteArct1c/cursos-alura/tree/main/Java%20Spring%20Framework/Java%20-%20Persistencia%20de%20dados%20e%20consultas%20com%20Spring%20Data%20JPA)
 - [Java: Criando sua primeira API em Spring Boot e conectando ao frontend](https://github.com/WhiteArct1c/cursos-alura/tree/main/Java%20Spring%20Framework/Java%20-%20Criando%20sua%20primeira%20API%20e%20conectando%20ao%20front/screenmatch-random-phrases)
+- [Spring Boot 3: Aplique boas práticas e proteja uma API REST](https://github.com/WhiteArct1c/cursos-alura/tree/main/Java%20Spring%20Framework/Spring%20Boot%203%20-%20Aplique%20boas%20pr%C3%A1ticas%20e%20proteja%20uma%20API%20Rest/2770-spring-boot-aula_2)
 
 ### NodeJS
 - [NodeJS: criando uma API REST com Express e MongoDB](https://github.com/WhiteArct1c/cursos-alura/tree/main/NodeJS/NodeJS%20-%20criando%20uma%20API%20REST%20com%20Express%20e%20MongoDB)
